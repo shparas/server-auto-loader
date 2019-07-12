@@ -18,7 +18,7 @@ while [ 1 ]; do
 		sudo kill -0 $app
 		# Lets give some time for the process to die.
 		sleep 5
-		echo; echo "Updating the server files"
+		echo; echo "Updating the server files" 
 		git fetch --all
 		git reset --hard origin/master
 		sudo node app.js &

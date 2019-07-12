@@ -32,4 +32,3 @@ while [ 1 ]; do
 	# Lets pause so that we do not overload the server
 	sleep 5
 done
-

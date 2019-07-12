@@ -3,14 +3,11 @@
 # If Git requires username and password, will prompt in the middle.
 # Our main process runs in background.
 sudo node app.js &
-
 # Copy that process ID into app variable.
 app=$!
-
 # Not required but lets wait for few seconds.
 sleep 3
-
-# Forever Loop
+# Forever Loop...
 while [ 1 ]; do
 	# Check if files are updated on the remote origin.
 	status=`git remote update`

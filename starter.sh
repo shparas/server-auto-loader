@@ -9,7 +9,7 @@ while [ 1 ]; do
 	status=`git status -uno | sed -n '2p' | cut -c 16-20`
 	if [ "$status" != "up to" ]; then
 		sudo kill -0 $app
-		fg
+		fg $app
 		echo;echo "Updating the server files"
 		git fetch --all
 		git reset --hard origin/master
